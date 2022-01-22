@@ -1,0 +1,272 @@
+body {
+  background-color: #ffffff;
+  font-family: "Encode Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 90%;
+}
+
+img {
+  border-radius: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: none;
+}
+
+.logo > a > img {
+  width: 171px;
+  height: 36px;
+}
+
+.menu {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #f5f6f7 solid 1px;
+  border-top: #f5f6f7 solid 1px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.menu-itens {
+  width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-itens a {
+  font-size: 19px;
+  font-weight: bold;
+  height: 40px;
+}
+
+.menu-itens div:nth-child(1) a {
+  color: #c3170c;
+}
+.menu-itens div:nth-child(2) a {
+  color: #1e4b9b;
+}
+.menu-itens div:nth-child(3) a {
+  color: #006766;
+}
+.menu-itens div:nth-child(4) a {
+  color: #07aa47;
+}
+.menu-itens div:nth-child(5) a {
+  color: #e3662b;
+}
+.menu-itens div:nth-child(6) a {
+  color: #fb0735;
+}
+.menu-itens div:nth-child(7) a {
+  color: #ff75bb;
+}
+.menu-itens div:nth-child(8) a {
+  color: #ec7d00;
+}
+.menu-itens div:nth-child(9) a {
+  color: #323333;
+}
+.menu-itens div:nth-child(10) a {
+  color: #a81d83;
+}
+
+.pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagina div {
+  margin-bottom: 20px;
+}
+
+.pagina > div {
+  width: 1250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destaque,
+.secundario {
+  margin-right: 35px;
+}
+
+.secundario div:nth-child(2) {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.destaque p:nth-child(1) a {
+  color: #c4160c;
+  font-weight: bold;
+  font-size: 52px;
+  letter-spacing: -0.01em;
+  line-height: 67px;
+}
+
+.destaque p:nth-child(2) a,
+p:nth-child(3) a {
+  color: #303134;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+}
+
+.secundario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: #ebedef 1px solid;
+  padding-top: 35px;
+}
+
+.secundario img {
+  width: 193px;
+  height: 110px;
+  margin-bottom: 10px;
+}
+
+.secundario p {
+  width: 193px;
+}
+
+.secundario .label {
+  color: #c4160c;
+}
+
+.secundario .titulo,
+.esportes .titulo,
+.entretenimento .titulo {
+  color: #2f3134;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.045em;
+}
+
+.secundario .sub,
+.esportes .sub,
+.entretenimento .sub {
+  color: #2f3134;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.048em;
+}
+
+.esportes {
+  border-left: #ebedef 1px solid;
+  border-right: #ebedef 1px solid;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.esportes .label {
+  color: #16ae54;
+}
+
+.esportes p,
+.entretenimento p {
+  width: 240px;
+}
+
+.esportes img,
+.entretenimento img {
+  width: 240px;
+  height: 128px;
+  margin-bottom: 10px;
+}
+
+.entretenimento .label {
+  color: #ec8006;
+}
+
+.entretenimento {
+  padding-left: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .destaque {
+    padding-left: 35px;
+  }
+  .pagina > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .secundario {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .entretenimento {
+    padding-right: 35px;
+  }
+  .esportes {
+    border-left: none;
+    border-right: none;
+  }
+  .menu-itens {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-itens div:nth-child(2) a {
+    display: none;
+  }
+  .menu-itens div:nth-child(3) a {
+    display: none;
+  }
+
+  .menu-itens div:nth-child(5) a {
+    display: none;
+  }
+  .menu-itens div:nth-child(6) a {
+    color: #fb0735;
+  }
+  .menu-itens div:nth-child(7) a {
+    display: none;
+  }
+  .menu-itens div:nth-child(9) a {
+    display: none;
+  }
+  .menu-itens div:nth-child(10) a {
+    color: #a81d83;
+  }
+}
